@@ -62,3 +62,5 @@ Creating ETL pipeline on GCP with Data Fusion and Airflow
 ---
 
 ### Example of Repository Structure:
+
+airflow_gcp_pipeline/ ├── assets/ │ ├── screenshots/ │ ├── screenshot1.png │ ├── screenshot2.png ├── data_fusion_pipeline.json # Exported Data Fusion pipeline configuration ├── dags/ ├── upload_to_gcs.py ├── README.md └── other_files...
