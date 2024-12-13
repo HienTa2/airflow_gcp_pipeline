@@ -29,7 +29,8 @@ This project demonstrates an ETL pipeline using Apache Airflow and Google Cloud 
 
 ## Architecture
 
-![Architecture Diagram](assets/architecture.png)
+![Architecture Diagram](![{65B596E3-8BCF-4079-B907-BBC909E2F31A}](https://github.com/user-attachments/assets/f6a945e5-e0a9-4ba3-9e19-21925ffe94b0)
+)
 
 ## Prerequisites
 
