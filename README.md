@@ -1,63 +1,46 @@
-# airflow_gcp_pipeline
-Creating ETL pipeline on GCP with Data Fusion and Airflow
+# Airflow GCP Pipeline
 
+![Project Banner](assets/banner.png)
 
+[![License](https://img.shields.io/github/license/HienTa2/airflow_gcp_pipeline)](LICENSE)
+[![Issues](https://img.shields.io/github/issues/HienTa2/airflow_gcp_pipeline)](https://github.com/HienTa2/airflow_gcp_pipeline/issues)
 
+## Overview
 
-![image](https://github.com/user-attachments/assets/445b8758-48bb-4866-b388-a7232b46a081)
+This project demonstrates an ETL pipeline using Apache Airflow and Google Cloud Platform (GCP) services. The pipeline extracts data from various sources, transforms it, and loads it into BigQuery for analysis.
 
-## Steps to Set Up Cloud Data Fusion Pipeline
+## Table of Contents
 
-### 1. Navigate to Cloud Data Fusion
-- Open **Cloud Data Fusion** from the Google Cloud Console.
-- Select your instance or create a new instance if one doesn’t exist.
+- [Features](#features)
+- [Architecture](#architecture)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Data Fusion Pipeline Setup](#data-fusion-pipeline-setup)
+- [Contributing](#contributing)
+- [License](#license)
 
-### 2. Open the Studio
-- On the Cloud Data Fusion dashboard, click on **"Studio"** to access the pipeline editor.
+## Features
 
-### 3. Create a New Pipeline
-- Click on **"Create Pipeline"**.
-- Choose the pipeline type:
-  - **Batch Pipeline**: For batch processing.
-  - **Realtime Pipeline**: For streaming data.
+- **Data Extraction**: Retrieves data from multiple sources.
+- **Data Transformation**: Processes and cleans data for analysis.
+- **Data Loading**: Stores transformed data into BigQuery.
+- **Orchestration**: Utilizes Apache Airflow for scheduling and monitoring.
 
-### 4. Add a GCS Source
-- Drag the **GCS Source** plugin onto the canvas.
-- Configure the GCS Source:
-  - **Bucket Name**: `emp_data_etl`
-  - **File Path**: `employee_data/employee_data.csv`
-  - **File Format**: `CSV`
-- Test the connection to ensure it works.
+## Architecture
 
-### 5. Add a Wrangler Plugin (Optional)
-- Drag the **Wrangler** plugin onto the canvas to clean or transform data.
-- Use the plugin to:
-  - Rename columns.
-  - Filter rows.
-  - Perform other data transformation tasks.
+![Architecture Diagram](assets/architecture.png)
 
-### 6. Add a BigQuery Sink
-- Drag the **BigQuery Sink** plugin onto the canvas.
-- Configure the BigQuery Sink:
-  - **Project ID**: `data-pipeline-444601`
-  - **Dataset**: Create or use an existing dataset (e.g., `etl_results`).
-  - **Table Name**: `employee_data`
-- Test the connection to ensure the table is accessible.
+## Prerequisites
 
-### 7. Connect Plugins
-- Connect the **GCS Source** to the **Wrangler** (if used), and then to the **BigQuery Sink**.
+- Python 3.7 or higher
+- Google Cloud SDK
+- Apache Airflow
+- Access to GCP services: BigQuery, Cloud Storage, Data Fusion
 
-### 8. Validate the Pipeline
-- Click **"Validate"** to check for any configuration errors.
+## Installation
 
-### 9. Deploy and Run
-- Click **"Deploy"** to save and deploy the pipeline.
-- Once deployed, click **"Run"** to execute the pipeline.
-
-### 10. Export the Pipeline
-- After running the pipeline, export it as a JSON file:
-  - Click on the **Options Menu** (three dots in the top-right corner of the editor).
-  - Select **Export Pipeline** and save it as `data_fusion_pipeline.json`.
-
----
-
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/HienTa2/airflow_gcp_pipeline.git
+   cd airflow_gcp_pipeline
