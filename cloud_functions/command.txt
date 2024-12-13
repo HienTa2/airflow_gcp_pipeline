@@ -1,0 +1,5 @@
+# command to assign the json to GOOGLE_APPLICATION_CREDENTIALS
+$env:GOOGLE_APPLICATION_CREDENTIALS="C:\Users\Admin\PycharmProjects\etl_gcp\service-account-key.json"
+
+# to check if you see the key 
+echo $env:GOOGLE_APPLICATION_CREDENTIALS
