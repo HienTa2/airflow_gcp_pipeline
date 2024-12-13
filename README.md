@@ -75,19 +75,68 @@ export GOOGLE_APPLICATION_CREDENTIALS="/path/to/service-account-key.json"
   ```
 
 ## Data Fusion Pipeline Setup
+
 ### Steps to Create the Pipeline
-  1. Navigate to Cloud Data Fusion in GCP.
-  2. Open the Studio and create a new pipeline.
-  3. Add the following components:
-       * GCS Source:
-            * Bucket: emp_data_etl
-            * File Path: employee_data/employee_data.csv
-       * Wrangler Plugin (Optional) for data transformation.
-       * BigQuery Sink:
-         * Project: data-pipeline-444601
-         * Dataset: etl_results
-         * Table: employee_data
-  4. Validate and deploy the pipeline.
-  5. Export the pipeline as data_fusion_pipeline.json.
+
+1. **Navigate to Cloud Data Fusion:**
+   - Open **Cloud Data Fusion** in GCP.
+   - Open the **Studio** and create a new pipeline.
+
+2. **Add a GCS Source:**
+   - Drag the **GCS Source** plugin onto the canvas.
+   - Configure the plugin:
+     - **Bucket**: `emp_data_etl`
+     - **File Path**: `employee_data/employee_data.csv`
+     - **Format**: `CSV`
+   - Test the connection to ensure it works.
+
+3. **Add the Wrangler Plugin (Optional for Data Transformation):**
+   - Drag the **Wrangler** plugin onto the canvas and connect it to the **GCS Source**.
+   - Open the **Wrangler** UI by clicking on the plugin and select **Configure**.
+   - Use the Wrangler interface to:
+     - **Rename Columns**: Rename any column headers by clicking on the column name and editing it.
+     - **Filter Rows**: Remove rows based on specific conditions (e.g., "Filter rows where salary is greater than $50,000").
+     - **Add Columns**: Add calculated fields or combine existing columns.
+     - **Clean Data**: Trim spaces, remove null values, or standardize text formats.
+   - Once the transformations are complete, save the configuration.
+
+4. **Add a BigQuery Sink:**
+   - Drag the **BigQuery Sink** plugin onto the canvas.
+   - Configure the plugin:
+     - **Project ID**: `data-pipeline-444601`
+     - **Dataset**: `etl_results`
+     - **Table Name**: `employee_data`
+   - Test the connection to ensure it works.
+
+5. **Connect the Plugins:**
+   - Connect the **GCS Source** → **Wrangler** (if used) → **BigQuery Sink**.
+
+6. **Validate and Deploy:**
+   - Click on **Validate** to check for errors in the pipeline.
+   - Once validated, click **Deploy**.
+
+7. **Run the Pipeline:**
+   - After deployment, click **Run** to execute the pipeline.
+   - Monitor the progress from the **Pipeline Studio** dashboard.
+
+8. **Export the Pipeline:**
+   - Once the pipeline is complete, export it as a JSON file:
+     - Click the **Options Menu** (three dots in the top-right corner).
+     - Select **Export Pipeline** and save it as `data_fusion_pipeline.json`.
+
+---
+
+### Wrangler Transformations Example
+- Rename `first_name` to `First Name`.
+- Remove rows where `department` is `null`.
+- Add a new column `full_name` by concatenating `first_name` and `last_name`.
+
+---
+
+### Screenshot Example
+Below is an example of how the Wrangler plugin looks when performing transformations:
+
+![Cloud Data Fusion Wrangler Example](assets/screenshots/wrangler_example.png)
+
 
 
