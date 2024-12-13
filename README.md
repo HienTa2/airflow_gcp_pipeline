@@ -115,19 +115,23 @@ export GOOGLE_APPLICATION_CREDENTIALS="/path/to/service-account-key.json"
      - **Dataset**: `etl_results`
      - **Table Name**: `employee_data`
    - Test the connection to ensure it works.
+  
 
-5. **Connect the Plugins:**
+   ![{31DFC4B3-6239-4766-B72E-40D0A9B1AB09}](https://github.com/user-attachments/assets/6cb02248-8eed-4bbe-b136-8044eb1cfc27)
+
+
+6. **Connect the Plugins:**
    - Connect the **GCS Source** → **Wrangler** (if used) → **BigQuery Sink**.
 
-6. **Validate and Deploy:**
+7. **Validate and Deploy:**
    - Click on **Validate** to check for errors in the pipeline.
    - Once validated, click **Deploy**.
 
-7. **Run the Pipeline:**
+8. **Run the Pipeline:**
    - After deployment, click **Run** to execute the pipeline.
    - Monitor the progress from the **Pipeline Studio** dashboard.
 
-8. **Export the Pipeline:**
+9. **Export the Pipeline:**
    - Once the pipeline is complete, export it as a JSON file:
      - Click the **Options Menu** (three dots in the top-right corner).
      - Select **Export Pipeline** and save it as `data_fusion_pipeline.json`.
