@@ -99,6 +99,9 @@ export GOOGLE_APPLICATION_CREDENTIALS="/path/to/service-account-key.json"
      - **Add Columns**: Add calculated fields or combine existing columns.
      - **Clean Data**: Trim spaces, remove null values, or standardize text formats.
    - Once the transformations are complete, save the configuration.
+  
+     ![{B096D4EC-9D85-43F7-911F-5EED8DEA9A6D}](https://github.com/user-attachments/assets/faf54c8f-7a6e-4f09-9bbf-73372d522c10)
+
 
 4. **Add a BigQuery Sink:**
    - Drag the **BigQuery Sink** plugin onto the canvas.
