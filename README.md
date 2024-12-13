@@ -102,6 +102,9 @@ export GOOGLE_APPLICATION_CREDENTIALS="/path/to/service-account-key.json"
   
      ![{B096D4EC-9D85-43F7-911F-5EED8DEA9A6D}](https://github.com/user-attachments/assets/faf54c8f-7a6e-4f09-9bbf-73372d522c10)
 
+     ![{B096D4EC-9D85-43F7-911F-5EED8DEA9A6D}](https://github.com/user-attachments/assets/5e549e1f-37ca-4bcf-94b2-9a2292a8aa6a)
+
+
 
 4. **Add a BigQuery Sink:**
    - Drag the **BigQuery Sink** plugin onto the canvas.
