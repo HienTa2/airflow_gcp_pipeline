@@ -102,7 +102,7 @@ export GOOGLE_APPLICATION_CREDENTIALS="/path/to/service-account-key.json"
   
   ![Image 2](https://github.com/user-attachments/assets/faf54c8f-7a6e-4f09-9bbf-73372d522c10)
 
-  ![Image 3](https://github.com/user-attachments/assets/3c1b235c-83eb-4613-9da3-d17b05942257)
+  <img src="https://github.com/user-attachments/assets/a7e7df1f-f245-4a4f-93b5-4f770c44262c" alt="Image 3 Description" width="600">
 
 
 
