@@ -128,6 +128,10 @@ export GOOGLE_APPLICATION_CREDENTIALS="/path/to/service-account-key.json"
    - Click on **Validate** to check for errors in the pipeline.
    - Once validated, click **Deploy**.
 
+     
+![{46A05AAE-F52C-4E84-80D4-0F6130930635}](https://github.com/user-attachments/assets/1128ac9c-25c3-49c1-a4b3-8a7d062ab172)
+
+
 8. **Run the Pipeline:**
    - After deployment, click **Run** to execute the pipeline.
    - Monitor the progress from the **Pipeline Studio** dashboard.
