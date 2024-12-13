@@ -100,9 +100,9 @@ export GOOGLE_APPLICATION_CREDENTIALS="/path/to/service-account-key.json"
      - **Clean Data**: Trim spaces, remove null values, or standardize text formats.
    - Once the transformations are complete, save the configuration.
   
-     ![{B096D4EC-9D85-43F7-911F-5EED8DEA9A6D}](https://github.com/user-attachments/assets/faf54c8f-7a6e-4f09-9bbf-73372d522c10)
+   ##  ![{B096D4EC-9D85-43F7-911F-5EED8DEA9A6D}](https://github.com/user-attachments/assets/faf54c8f-7a6e-4f09-9bbf-73372d522c10)
 
-     ![{FA8560CC-FB62-42A7-92DB-B14D785817B2}](https://github.com/user-attachments/assets/3c1b235c-83eb-4613-9da3-d17b05942257)
+   ###  ![{FA8560CC-FB62-42A7-92DB-B14D785817B2}](https://github.com/user-attachments/assets/3c1b235c-83eb-4613-9da3-d17b05942257)
 
 
 
