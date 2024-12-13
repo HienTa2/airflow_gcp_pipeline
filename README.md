@@ -72,8 +72,8 @@ source .venv/bin/activate   # On Windows: .venv\Scripts\activate
 export GOOGLE_APPLICATION_CREDENTIALS="/path/to/service-account-key.json"
 
 
-### Data Fusion Pipeline Setup
-# Steps to Create the Pipeline
+## Data Fusion Pipeline Setup
+### Steps to Create the Pipeline
   1. Navigate to Cloud Data Fusion in GCP.
   2. Open the Studio and create a new pipeline.
   3. Add the following components:
