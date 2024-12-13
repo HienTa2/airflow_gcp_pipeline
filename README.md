@@ -59,18 +59,20 @@ This project demonstrates an ETL pipeline using Apache Airflow and Google Cloud 
    ```bash
    git clone https://github.com/HienTa2/airflow_gcp_pipeline.git
    cd airflow_gcp_pipeline
+   ```
 
 
 ## Set up a virtual environment:
-
+```bash
 python3 -m venv .venv
 source .venv/bin/activate   # On Windows: .venv\Scripts\activate
-
+```
 
 
 ## Set up Google Cloud credentials:
+  ```bash
 export GOOGLE_APPLICATION_CREDENTIALS="/path/to/service-account-key.json"
-
+  ```
 
 ## Data Fusion Pipeline Setup
 ### Steps to Create the Pipeline
