@@ -5,9 +5,13 @@
 [![License](https://img.shields.io/github/license/HienTa2/airflow_gcp_pipeline)](LICENSE)
 [![Issues](https://img.shields.io/github/issues/HienTa2/airflow_gcp_pipeline)](https://github.com/HienTa2/airflow_gcp_pipeline/issues)
 
+---
+
 ## Overview
 
-This project demonstrates an ETL pipeline using Apache Airflow and Google Cloud Platform (GCP) services. The pipeline extracts data from various sources, transforms it, and loads it into BigQuery for analysis.
+This project demonstrates an ETL pipeline using Apache Airflow and Google Cloud Platform (GCP) services. The pipeline extracts data from Google Cloud Storage (GCS), transforms it in Cloud Data Fusion, and loads it into BigQuery for analysis.
+
+---
 
 ## Table of Contents
 
@@ -20,24 +24,34 @@ This project demonstrates an ETL pipeline using Apache Airflow and Google Cloud 
 - [Contributing](#contributing)
 - [License](#license)
 
+---
+
 ## Features
 
-- **Data Extraction**: Retrieves data from multiple sources.
-- **Data Transformation**: Processes and cleans data for analysis.
-- **Data Loading**: Stores transformed data into BigQuery.
-- **Orchestration**: Utilizes Apache Airflow for scheduling and monitoring.
+- **Data Extraction**: Pulls data from Google Cloud Storage.
+- **Data Transformation**: Processes data using Cloud Data Fusion.
+- **Data Loading**: Loads transformed data into BigQuery.
+- **Orchestration**: Manages ETL workflows with Apache Airflow.
+
+---
 
 ## Architecture
 
-![Architecture Diagram]
+![Architecture Diagram](assets/diagrams/data_fusion_pipeline.png)
 
-![{65B596E3-8BCF-4079-B907-BBC909E2F31A}](https://github.com/user-attachments/assets/f6a945e5-e0a9-4ba3-9e19-21925ffe94b0)
+---
+
 ## Prerequisites
 
 - Python 3.7 or higher
-- Google Cloud SDK
-- Apache Airflow
-- Access to GCP services: BigQuery, Cloud Storage, Data Fusion
+- Google Cloud SDK installed and configured
+- Apache Airflow set up
+- Access to the following GCP services:
+  - BigQuery
+  - Cloud Storage
+  - Cloud Data Fusion
+
+---
 
 ## Installation
 
