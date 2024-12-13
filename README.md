@@ -117,7 +117,8 @@ export GOOGLE_APPLICATION_CREDENTIALS="/path/to/service-account-key.json"
    - Test the connection to ensure it works.
   
 
-  ![{7343E1F4-A84A-4DF1-8856-2743258BB378}](https://github.com/user-attachments/assets/a94662b2-59f1-4f53-b644-a919bc4c7fd3)
+ ![{4BF3C5EB-FB97-4384-9CC3-43982675027E}](https://github.com/user-attachments/assets/e104fc33-1236-439b-a6cc-60090b419963)
+
 
 
 6. **Connect the Plugins:**
