@@ -59,3 +59,33 @@ This project demonstrates an ETL pipeline using Apache Airflow and Google Cloud 
    ```bash
    git clone https://github.com/HienTa2/airflow_gcp_pipeline.git
    cd airflow_gcp_pipeline
+
+
+## Set up a virtual environment:
+
+python3 -m venv .venv
+source .venv/bin/activate   # On Windows: .venv\Scripts\activate
+
+
+
+## Set up Google Cloud credentials:
+export GOOGLE_APPLICATION_CREDENTIALS="/path/to/service-account-key.json"
+
+
+### Data Fusion Pipeline Setup
+# Steps to Create the Pipeline
+  1. Navigate to Cloud Data Fusion in GCP.
+  2. Open the Studio and create a new pipeline.
+  3. Add the following components:
+       * GCS Source:
+            * Bucket: emp_data_etl
+            * File Path: employee_data/employee_data.csv
+       * Wrangler Plugin (Optional) for data transformation.
+       * BigQuery Sink:
+         * Project: data-pipeline-444601
+         * Dataset: etl_results
+         * Table: employee_data
+  4. Validate and deploy the pipeline.
+  5. Export the pipeline as data_fusion_pipeline.json.
+
+
