@@ -22,7 +22,6 @@ This project demonstrates an ETL pipeline using Apache Airflow and Google Cloud 
 - [Usage](#usage)
 - [Data Fusion Pipeline Setup](#data-fusion-pipeline-setup)
 - [Contributing](#contributing)
-- [License](#license)
 
 ---
 
