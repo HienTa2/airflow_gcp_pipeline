@@ -133,10 +133,6 @@ export GOOGLE_APPLICATION_CREDENTIALS="/path/to/service-account-key.json"
 
 ---
 
-### Screenshot Example
-Below is an example of how the Wrangler plugin looks when performing transformations:
-
-![Cloud Data Fusion Wrangler Example](assets/screenshots/wrangler_example.png)
 
 
 
