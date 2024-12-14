@@ -75,7 +75,7 @@ export GOOGLE_APPLICATION_CREDENTIALS="/path/to/service-account-key.json"
   ```
 ## Set up local login without using service account:
   ```bash
-gcloud config get-value project
+gcloud auth application-default login
   ```
 
 ## Data Fusion Pipeline Setup
