@@ -73,6 +73,10 @@ source .venv/bin/activate   # On Windows: .venv\Scripts\activate
   ```bash
 export GOOGLE_APPLICATION_CREDENTIALS="/path/to/service-account-key.json"
   ```
+## Set up local login without using service account:
+  ```bash
+gcloud config get-value project
+  ```
 
 ## Data Fusion Pipeline Setup
 
