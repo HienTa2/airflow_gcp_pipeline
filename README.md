@@ -140,7 +140,9 @@ gcloud auth application-default login
    - After deployment, click **Run** to execute the pipeline.
    - Monitor the progress from the **Pipeline Studio** dashboard.
   
-  ![{DE6DFBC1-A126-450E-B1E3-26E520E7FFFD}](https://github.com/user-attachments/assets/ed8f9313-27ac-4c40-bfcd-93873ea59fcd)
+
+  ![{A7F1218D-DB12-46D9-8709-92D855EBD21B}](https://github.com/user-attachments/assets/029e0656-a6ee-4888-b5aa-a316443a3744)
+
 
 
 10. **Export the Pipeline:**
