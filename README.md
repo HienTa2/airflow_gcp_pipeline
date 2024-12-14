@@ -139,8 +139,11 @@ gcloud auth application-default login
 8. **Run the Pipeline:**
    - After deployment, click **Run** to execute the pipeline.
    - Monitor the progress from the **Pipeline Studio** dashboard.
+  
+  ![{DE6DFBC1-A126-450E-B1E3-26E520E7FFFD}](https://github.com/user-attachments/assets/ed8f9313-27ac-4c40-bfcd-93873ea59fcd)
 
-9. **Export the Pipeline:**
+
+10. **Export the Pipeline:**
    - Once the pipeline is complete, export it as a JSON file:
      - Click the **Options Menu** (three dots in the top-right corner).
      - Select **Export Pipeline** and save it as `data_fusion_pipeline.json`.
