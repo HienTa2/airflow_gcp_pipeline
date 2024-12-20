@@ -115,7 +115,7 @@ gcloud auth application-default login
 4. **Add a BigQuery Sink:**
    - Drag the **BigQuery Sink** plugin onto the canvas.
    - Configure the plugin:
-     - **Project ID**: `data-pipeline-444601`
+     - **Project ID**: `hien-gcp-airflow`
      - **Dataset**: `etl_results`
      - **Table Name**: `employee_data`
    - Test the connection to ensure it works.
